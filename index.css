@@ -1,0 +1,42 @@
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+    background: #ccc;
+}
+
+.flex-container div {
+    display: flex;
+    min-height: 50px;
+    background: #fff;
+}
+
+div.group {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 20px;
+    width: 20px;
+    background: blue;
+    -webkit-animation: lengthGroup 3s ease-in .5s 1 alternate forwards;
+}
+.stop {
+    -webkit-animation-play-state: paused !important;
+    animation-play-state: paused !important;
+}
+
+@keyframes lengthGroup {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 80%;
+    }
+    
+    
+}
